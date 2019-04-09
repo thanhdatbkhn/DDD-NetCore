@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\">
+      <DependentUpon>Services</DependentUpon>
+    </Folder>
+    <Folder Include="DataTransferObjects\">
+      <DependentUpon>DataTransferObjects</DependentUpon>
+    </Folder>
+    <Folder Include="MappingConfigurations\">
+      <DependentUpon>MappingConfigurations</DependentUpon>
+    </Folder>
+    <Folder Include="Models\">
+      <DependentUpon>Models</DependentUpon>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+    <Compile Remove="Services\IManufacturerService.cs" />
+    <Compile Remove="Services\IOrdersService.cs" />
+    <Compile Remove="Services\IPackingUnitExchangesService.cs" />
+    <Compile Remove="Services\ManufacturerService.cs" />
+    <Compile Remove="Services\OrdersService.cs" />
+    <Compile Remove="Services\PackingUnitExchangeService.cs" />
+    <Compile Remove="Services\PackingUnitsService.cs" />
+    <Compile Remove="Services\VendorService.cs" />
+    <Compile Remove="Services\IVendorService.cs" />
+    <Compile Remove="Services\IPackingUnitsService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iStorage.Domain\iStorage.Domain.csproj" />
+    <ProjectReference Include="..\iStorage.Data\iStorage.Data.csproj" />
+    <ProjectReference Include="..\iStorage.Common\iStorage.Common.csproj" />
+  </ItemGroup>
+</Project>

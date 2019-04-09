@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\">
+    </Folder>
+    <Folder Include="Events\">
+    </Folder>
+    <Folder Include="Commands\">
+    </Folder>
+    <Folder Include="Services\">
+    </Folder>
+    <Folder Include="Specifications\">
+    </Folder>
+    <Folder Include="Repository\">
+    </Folder>
+    <Folder Include="Configurations\">
+      <DependentUpon>Configurations</DependentUpon>
+    </Folder>
+  </ItemGroup>
+</Project>

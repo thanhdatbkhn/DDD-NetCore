@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repository\">
+    </Folder>
+    <Folder Include="UnitOfWork\">
+    </Folder>
+    <Folder Include="DataContext\">
+    </Folder>
+    <Folder Include="EntityConfigurations\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iStorage.Domain\iStorage.Domain.csproj" />
+  </ItemGroup>
+</Project>

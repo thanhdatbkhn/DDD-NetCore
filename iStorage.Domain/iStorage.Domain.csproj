@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AggregatesModels\">
+    </Folder>
+    <Folder Include="AggregatesModels\Users\">
+    </Folder>
+    <Folder Include="AggregatesModels\Products\">
+    </Folder>
+    <Folder Include="AggregatesModels\PackingUnits\">
+    </Folder>
+    <Folder Include="AggregatesModels\Manufacturers\">
+    </Folder>
+    <Folder Include="AggregatesModels\Vendors\">
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iStorage.DomainCore\iStorage.DomainCore.csproj" />
+  </ItemGroup>
+</Project>
